@@ -11771,8 +11771,54 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Survival-on-the-Titanic">Survival on the Titanic<a class="anchor-link" href="#Survival-on-the-Titanic">&#182;</a></h1><p>This is a notebook to analyze/predict survival rates on the Titanic.</p>
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><div class="toc" style="margin-top: 1em;"><ul class="toc-item" id="toc-level0"><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#Survival-on-the-Titanic" data-toc-modified-id="Survival-on-the-Titanic-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Survival on the Titanic</a></span><ul class="toc-item"><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#Executive-Summary" data-toc-modified-id="Executive-Summary-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Executive Summary</a></span></li><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#Data-Acquistion-and-Interpretation" data-toc-modified-id="Data-Acquistion-and-Interpretation-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Data Acquistion and Interpretation</a></span><ul class="toc-item"><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#0.-Dataframe-Manipulations" data-toc-modified-id="0.-Dataframe-Manipulations-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>0. Dataframe Manipulations</a></span></li><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#1.-Analysis" data-toc-modified-id="1.-Analysis-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>1. Analysis</a></span></li></ul></li></ul></li><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#Appendix" data-toc-modified-id="Appendix-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Appendix</a></span><ul class="toc-item"><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#1.-Types-of-Variables" data-toc-modified-id="1.-Types-of-Variables-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>1. Types of Variables</a></span><ul class="toc-item"><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#a.-Categorical-Variables" data-toc-modified-id="a.-Categorical-Variables-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>a. Categorical Variables</a></span></li><li><span><a href="http://localhost:8888/notebooks/Survival.ipynb#b.-Numerical-Variables" data-toc-modified-id="b.-Numerical-Variables-2.1.2"><span class="toc-item-num">2.1.2&nbsp;&nbsp;</span>b. Numerical Variables</a></span></li></ul></li></ul></li></ul></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Survival-on-the-Titanic">Survival on the Titanic<a class="anchor-link" href="#Survival-on-the-Titanic">&#182;</a></h1><p>This is a notebook to analyze and predict survival rates for passengers on board the Titanic. As stated on <a href="https://www.kaggle.com/c/titanic">kaggle.com</a>:</p>
+<blockquote><p>In this challenge, we ask you to complete the analysis of what sorts of people were likely to survive (the sinking of the Titanic). In particular, we ask you to apply the tools of machine learning to predict which passengers survived the tragedy.</p>
+<p>It is your job to predict if a passenger survived the sinking of the Titanic or not.
+For each <code>PassengerId</code> in the test set, you must predict a 0 or 1 value for the <code>Survived</code> variable.</p>
+<p>Your score is the percentage of passengers you correctly predict.</p>
+</blockquote>
+<p>Both a training dataset (used to train the machine learning algorithim) and a test dataset (used to test the algorithm) have been <a href="https://www.kaggle.com/c/titanic/data">provided</a>.</p>
+<p>Based heavily on content and analysis from the following jupyter notebooks:</p>
+<ul>
+<li><a href="https://www.kaggle.com/startupsci/titanic-data-science-solutions">Manav Sehgal</a></li>
+<li><a href="https://www.kaggle.com/omarelgabry/a-journey-through-titanic">Omar El Gabry</a></li>
+<li><a href="https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python">Arthur Tok</a></li>
+</ul>
+<p><strong>Last edited</strong>: 2017-09-29 13:10:58</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Executive-Summary">Executive Summary<a class="anchor-link" href="#Executive-Summary">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Stuff goes here once I'm finished.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Acquistion-and-Interpretation">Data Acquistion and Interpretation<a class="anchor-link" href="#Data-Acquistion-and-Interpretation">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11802,7 +11848,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Acquistion-and-Interpretation">Data Acquistion and Interpretation<a class="anchor-link" href="#Data-Acquistion-and-Interpretation">&#182;</a></h2><p>Now import the data for our problem and look at the first few entries for the training data. The training data is used to train our model which is then applied to the test data (and whereby success is gauged).</p>
+<p>Now import the data for our problem and look at the first few entries for the training data. The training data is used to train our model which is then applied to the test data (and whereby success is gauged).</p>
 
 </div>
 </div>
@@ -11825,7 +11871,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataframe-Manipulations">Dataframe Manipulations<a class="anchor-link" href="#Dataframe-Manipulations">&#182;</a></h3>
+<h3 id="0.-Dataframe-Manipulations">0. Dataframe Manipulations<a class="anchor-link" href="#0.-Dataframe-Manipulations">&#182;</a></h3><p><a id="Intro"></a></p>
+
 </div>
 </div>
 </div>
@@ -11833,9 +11880,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now let's take a quick detour and explore different ways to get information from our data set.</p>
-<p>First thing we need to do is analyze this dataset and see what it contains:</p>
-<p>To see the columns in our dataframe, we use the <code>columns.values</code> command:</p>
+<p>Now let's take a quick detour and explore different ways to get information from our dataset. This section can be collapsed or <a href="#chapter_1">skipped</a> for more knowledgeable readers.</p>
+<p>The first thing we need to do is analyze this dataset and see what it contains. To see the columns in our dataframe, we use the <code>columns.values</code> command:</p>
 
 </div>
 </div>
@@ -11920,17 +11966,17 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can print out the first ten entries of our dataset,</p>
+<p>We can print out the first three entries of our dataset using the <code>.head()</code> option (defaults to 5),</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11943,199 +11989,18 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
+<span class="ansi-red-fg">NameError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-3-02c49cbc5630&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>train<span class="ansi-blue-fg">.</span>head<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>PassengerId</th>
-      <th>Survived</th>
-      <th>Pclass</th>
-      <th>Name</th>
-      <th>Sex</th>
-      <th>Age</th>
-      <th>SibSp</th>
-      <th>Parch</th>
-      <th>Ticket</th>
-      <th>Fare</th>
-      <th>Cabin</th>
-      <th>Embarked</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Braund, Mr. Owen Harris</td>
-      <td>male</td>
-      <td>22.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>A/5 21171</td>
-      <td>7.2500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
-      <td>female</td>
-      <td>38.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>PC 17599</td>
-      <td>71.2833</td>
-      <td>C85</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Heikkinen, Miss. Laina</td>
-      <td>female</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>STON/O2. 3101282</td>
-      <td>7.9250</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
-      <td>female</td>
-      <td>35.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>113803</td>
-      <td>53.1000</td>
-      <td>C123</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Allen, Mr. William Henry</td>
-      <td>male</td>
-      <td>35.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>373450</td>
-      <td>8.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Moran, Mr. James</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330877</td>
-      <td>8.4583</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>0</td>
-      <td>1</td>
-      <td>McCarthy, Mr. Timothy J</td>
-      <td>male</td>
-      <td>54.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17463</td>
-      <td>51.8625</td>
-      <td>E46</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Palsson, Master. Gosta Leonard</td>
-      <td>male</td>
-      <td>2.0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)</td>
-      <td>female</td>
-      <td>27.0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>347742</td>
-      <td>11.1333</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Nasser, Mrs. Nicholas (Adele Achem)</td>
-      <td>female</td>
-      <td>14.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>237736</td>
-      <td>30.0708</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-  </tbody>
-</table>
+<span class="ansi-red-fg">NameError</span>: name &#39;train&#39; is not defined</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -12146,7 +12011,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>or print out the last 10 entries</p>
+<p>or print out the last three entries with <code>.tail()</code></p>
 
 </div>
 </div>
@@ -12156,7 +12021,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">train</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">train</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12491,95 +12356,118 @@ memory usage: 83.6+ KB
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For a review of categorical and numerical variables, see <a href="#app_vartypes">Appendix 1</a></p>
+<p><strong>Which features are categorical?</strong></p>
+<ul>
+<li><strong>Nominal</strong>: Survived, Sex, and Embarked</li>
+<li><strong>Ordinal</strong>: Pclass</li>
+</ul>
+<p>Note: Embarked is the port of Embarkation. C = Cherbourg, Q = Queenstown, S = Southampton</p>
+<p>Note: pclass is the ticket class (1 = 1st, 2 = 2nd, 3 = 3rd). Ordinal: dictionary meaning: relating to a thing's position in a series.</p>
+<p><strong>Which features are numerical?</strong></p>
+<p>These values change from sample to sample. Within numerical features are the values discrete, continuous, or timeseries based? Among other things this helps us select the appropriate plots for visualization.</p>
+<ul>
+<li><strong>Continous</strong>: Age, Fare. </li>
+<li><strong>Discrete</strong>: SibSp, Parch.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Analysis">1. Analysis<a class="anchor-link" href="#1.-Analysis">&#182;</a></h3><p><a id="chapter_1"></a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">colormap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">viridis</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Pearson Correlation of Features&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">linewidths</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">colormap</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="c1">#colormap = plt.cm.viridis</span>
+<span class="c1">#plt.figure(figsize=(12,12))</span>
+<span class="c1">#plt.title(&#39;Pearson Correlation of Features&#39;, y=1.05, size=15)</span>
+<span class="c1">#sns.heatmap(train.astype(float).corr(),linewidths=0.1,vmax=1.0, square=True, cmap=colormap, linecolor=&#39;white&#39;, annot=True)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-
-<span class="ansi-red-fg">ValueError</span>Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-8-07bb32c0a8d7&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> plt<span class="ansi-blue-fg">.</span>figure<span class="ansi-blue-fg">(</span>figsize<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">12</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">12</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> plt<span class="ansi-blue-fg">.</span>title<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;Pearson Correlation of Features&#39;</span><span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.05</span><span class="ansi-blue-fg">,</span> size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">15</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>sns<span class="ansi-blue-fg">.</span>heatmap<span class="ansi-blue-fg">(</span>train<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>float<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>corr<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>linewidths<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.1</span><span class="ansi-blue-fg">,</span>vmax<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">,</span> square<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">,</span> cmap<span class="ansi-blue-fg">=</span>colormap<span class="ansi-blue-fg">,</span> linecolor<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;white&#39;</span><span class="ansi-blue-fg">,</span> annot<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/util/_decorators.pyc</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     89</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     90</span>                     kwargs<span class="ansi-blue-fg">[</span>new_arg_name<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> new_arg_value
-<span class="ansi-green-fg">---&gt; 91</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     92</span>         <span class="ansi-green-fg">return</span> wrapper
-<span class="ansi-green-intense-fg ansi-bold">     93</span>     <span class="ansi-green-fg">return</span> _deprecate_kwarg
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/generic.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3408</span>         <span class="ansi-red-fg"># else, only a single dtype is given</span>
-<span class="ansi-green-intense-fg ansi-bold">   3409</span>         new_data = self._data.astype(dtype=dtype, copy=copy, errors=errors,
-<span class="ansi-green-fg">-&gt; 3410</span><span class="ansi-red-fg">                                      **kwargs)
-</span><span class="ansi-green-intense-fg ansi-bold">   3411</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_constructor<span class="ansi-blue-fg">(</span>new_data<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__finalize__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3412</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3222</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3223</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 3224</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>apply<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;astype&#39;</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3225</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3226</span>     <span class="ansi-green-fg">def</span> convert<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, f, axes, filter, do_integrity_check, consolidate, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3089</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3090</span>             kwargs<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;mgr&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> self
-<span class="ansi-green-fg">-&gt; 3091</span><span class="ansi-red-fg">             </span>applied <span class="ansi-blue-fg">=</span> getattr<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">,</span> f<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3092</span>             result_blocks <span class="ansi-blue-fg">=</span> _extend_blocks<span class="ansi-blue-fg">(</span>applied<span class="ansi-blue-fg">,</span> result_blocks<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3093</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, values, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    469</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>False<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;raise&#39;</span><span class="ansi-blue-fg">,</span> values<span class="ansi-blue-fg">=</span>None<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    470</span>         return self._astype(dtype, copy=copy, errors=errors, values=values,
-<span class="ansi-green-fg">--&gt; 471</span><span class="ansi-red-fg">                             **kwargs)
-</span><span class="ansi-green-intense-fg ansi-bold">    472</span> 
-<span class="ansi-green-intense-fg ansi-bold">    473</span>     def _astype(self, dtype, copy=False, errors=&#39;raise&#39;, values=None,
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">_astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, values, klass, mgr, raise_on_error, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    519</span> 
-<span class="ansi-green-intense-fg ansi-bold">    520</span>                 <span class="ansi-red-fg"># _astype_nansafe works fine with 1-d only</span>
-<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">                 </span>values <span class="ansi-blue-fg">=</span> astype_nansafe<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    522</span>                 values <span class="ansi-blue-fg">=</span> values<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    523</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/dtypes/cast.pyc</span> in <span class="ansi-cyan-fg">astype_nansafe</span><span class="ansi-blue-fg">(arr, dtype, copy)</span>
-<span class="ansi-green-intense-fg ansi-bold">    634</span> 
-<span class="ansi-green-intense-fg ansi-bold">    635</span>     <span class="ansi-green-fg">if</span> copy<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 636</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> arr<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    637</span>     <span class="ansi-green-fg">return</span> arr<span class="ansi-blue-fg">.</span>view<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    638</span> 
-
-<span class="ansi-red-fg">ValueError</span>: could not convert string to float: Q</pre>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Appendix">Appendix<a class="anchor-link" href="#Appendix">&#182;</a></h1><p><a id="appendix"></a></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Types-of-Variables">1. Types of Variables<a class="anchor-link" href="#1.-Types-of-Variables">&#182;</a></h2><p><a id="app_vartypes"></a></p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="a.-Categorical-Variables">a. Categorical Variables<a class="anchor-link" href="#a.-Categorical-Variables">&#182;</a></h3><p><a id="app_categorical"></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Categorical variables are <em>qualitative</em> and take on only a limited number of values. There are 3 types, nominal, ordinal, and interval:</p>
+<ul>
+<li>A <strong>nominal variable</strong> (sometimes called a <strong>categorical variable</strong>) is one that has two or more categories, but there is no intrinsic ordering to the categories, e.g., gender, hair color
+<br><br></li>
+<li>An <strong>ordinal variable</strong> is a type of categorical variable but one for which a clear ordering exists, e.g., education level (elementary, high school, college, graduate)
+<br><br></li>
+<li>An <strong>interval variable</strong> is similar to an ordinal variable but is defined on intervals that are equally spaced, e.g., whether someone is in the \$20,000-\$30,000, \$30,000-\$40,000, or \$40,000-\$50,000 income brackets</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="b.-Numerical-Variables">b. Numerical Variables<a class="anchor-link" href="#b.-Numerical-Variables">&#182;</a></h3><p><a id="app_numerical"></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Numerical variables are <em>quantitative</em> and have numbers as their values. There are 2 types, continuous and discrete:</p>
+<ul>
+<li>A <strong>continuous variable</strong> can take on any value in some range, e.g., the height of a person
+<br><br></li>
+<li>A <strong>discrete variable</strong> can only take on a specific number, e.g., how many siblings does a person have</li>
+</ul>
+
+</div>
+</div>
 </div>
     </div>
   </div>
